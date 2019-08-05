@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"> </script>
+    
+    <style>
+    body,
+        html {
+        font-family: arial;
+        background: #fffff0;
+        color: #8f1f08;
+        font-size: 20px;
+        line-height: 1.3;
+        margin: 0;
+        padding: 0;
+        }
+        #modal-content{
+            position: absolute;
+            width: 500px;
+            height: 259px;
+            z-index: 9999;
+            background: #FFF;
+            margin: 0 auto;
+            left: 37%;
+            top: 20%;
+            text-align: center;
+            border-radius: 20px;
+            padding: 40px;
+            border: 1px solid #CCC;
+        }
+        #container {
+        width: 650px;
+        padding: 10px;
+        margin: 0 auto;
+        }
+
+        h1,
+        h2 {
+        color: #2B292E
+        }
+
+        input {
+        border: 1px solid #333;
+        margin-bottom: 15px;
+        min-width: 250px;
+        padding: 8px;
+        }
+
+        .button {
+        transition-duration: 0.4s;
+        background: #720000;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        display: block;
+        font-size: 16px;
+        margin: 10px 2px;
+        cursor: pointer;
+        }
+
+        button.button:hover {
+        background: #990000
+        }
+
+        #cboxLoadedContent {
+        padding: 10px;
+        background: #fffff0;
+        }
+
+        #modal-content {
+        display: none;
+        }
+
+        #modal-content label {
+        display: block;
+        margin-bottom: 5px;
+        }
+
+        #modal-content input {
+        width: 95%;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="container">
+  <h1>My Awesome Site</h1>
+
+        <a href="./popup.html" >Popup Page</a>
+        
+<script>
+// var Cookies = document.cookie;
+//     $(".clear-cookie").on("click", function() {
+// //   Cookies.remove('colorboxShown');
+//   $(this).replaceWith("<p><em>Cookie cleared. Re-run demo</em></p>");
+// });
+
+// $(".order-cheezburger").on("click", function() {
+//   $.colorbox.close();
+// });
+
+// function onPopupOpen() {
+//   $("#modal-content").show();
+//   $("#yurEmail").focus();
+// }
+
+// function onPopupClose() {
+//   $("#modal-content").hide();
+// //   Cookies.set('colorboxShown', 'yes', {
+// //     expires: 1
+// //   });
+//   $(".clear-cookie").fadeIn();
+//   lastFocus.focus();
+// }
+
+// function displayPopup() {
+//   $.colorbox({
+//     inline: true,
+//     href: "#modal-content",
+//     className: "cta",
+//     width: 600,
+//     height: 350,
+//     onComplete: onPopupOpen,
+//     onClosed: onPopupClose
+//   });
+// }
+
+
+// var popupShown = Cookies.get('colorboxShown');
+
+setTimeout(function() {
+    $('#modal-content').modal();
+}, 6000);
+
+</script>
+</body>
+</html>
